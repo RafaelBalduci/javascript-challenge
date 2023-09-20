@@ -2,31 +2,44 @@ const names = ["Fred", "Wilma", "Barney", "Betty", "Pebbles", "Bamm-Bamm"];
 
 function addNameStart() {
   names.push("Rada");
-  console.log(names);
+  return names;
 }
 
 function addNameEnd() {
   names.unshift("Kenya");
-  console.log(names);
+  return names;
 }
 
 function removeNameStart() {
   names.shift();
-  console.log(names);
+  return names;
 }
 
 function addNameEnd() {
   names.pop();
-  console.log(names);
+  return names;
 }
 
-function createLowercasedNames() {}
+function createLowercasedNames() {
+  let names2 = names.map((names) => names.toLowerCase());
+  return names2;
+}
 
-function sortNames() {}
+function sortNames() {
+  names.sort();
+  return names;
+}
 
-function findIndex() {}
+function findIndex() {
+  let index = names.indexOf("Pebbles");
+  return index;
+}
 
-function reverseOrder() {}
+function reverseOrder() {
+  names.sort();
+  names.reverse();
+  return names;
+}
 
 console.log(
   addNameStart() +
